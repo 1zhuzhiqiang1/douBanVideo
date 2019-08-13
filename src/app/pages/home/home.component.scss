@@ -1,0 +1,31 @@
+h1 {
+    font-size: 26px;
+}
+
+.tags {
+    overflow: hidden;
+    zoom: 1;
+    .tag-list {
+        width: auto;
+        display: inline;
+        .tag {
+            display: inline-block;
+            zoom: 1;
+            cursor: pointer;
+            padding: 1px 10px;
+            margin: 0 3px 5px 0;
+            color: #666;
+            font-size: 14px;
+            border-radius: 2px;
+            background: none;
+        }
+        .tag :focus {
+            background: #4b8ccb;
+        }
+        .active {
+            background: #4b8ccb;
+            color: #fff;
+        }
+    }
+
+}
