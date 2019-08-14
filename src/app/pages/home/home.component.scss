@@ -27,5 +27,45 @@ h1 {
             color: #fff;
         }
     }
+}
 
+.videos {
+    margin-top: 20px;
+    width: 100%;
+    a {
+        display: block;
+        float: left;
+        color: #37a;
+        font-size: 13px;
+        text-align: center;
+        margin: 0 25px 10px 0;
+        width: 115px;
+        .cover-wp {
+            background-size: 100%;
+            width: 100%;
+            height: 161px;
+            overflow: hidden;
+            img {
+                border-width: 0;
+                vertical-align: middle;
+                max-width: 100%;
+            }
+        }
+        p {
+            margin: 5px 0 0;
+            height: 44px;
+            overflow: hidden;
+            .green {
+                color: #58a05a;
+                .new {
+                    opacity: 1;
+                    position: relative;
+                    top: -2px;
+                }
+            }
+            strong {
+                color: #e09015;
+            }
+        }
+    }
 }

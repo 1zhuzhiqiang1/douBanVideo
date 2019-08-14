@@ -2,9 +2,25 @@
     <h1>选电影</h1>
     <div class="tags">
         <div class="tag-list">
-            <div class="tag" *ngFor="let tag of tags;index as i;" [ngClass]="{'active':i==selectTag}" (click)="selectTag=i">
+            <div class="tag" *ngFor="let tag of tags;index as i;" [ngClass]="{'active':i==selectTag}"
+                 (click)="clickTag(i, tag)">
                 {{tag}}
             </div>
         </div>
+    </div>
+
+    <div class="videos">
+        <a class="video" target="_blank" *ngFor="let video of videos;">
+            <div class="cover-wp">
+                <img src="{{video?.cover}}" alt="{{video?.title}}">
+            </div>
+            <p>
+                <span class="green">
+                    <img src="{{greenUrl}}" width="16" class="new">
+                </span>
+                {{video?.title}}
+                <strong>{{video?.rate}}</strong>
+            </p>
+        </a>
     </div>
 </div>

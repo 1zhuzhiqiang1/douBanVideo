@@ -6,6 +6,7 @@ import {AppComponent} from './app.component';
 import {HomeComponent} from './pages/home/home.component';
 import {HttpApiClient} from './api/httpapiclient';
 import {HttpClientModule} from '@angular/common/http';
+import {HashLocationStrategy, LocationStrategy} from '@angular/common';
 
 @NgModule({
     declarations: [
@@ -17,7 +18,8 @@ import {HttpClientModule} from '@angular/common/http';
         HttpClientModule
     ],
     providers: [
-        HttpApiClient
+        HttpApiClient,
+        {provide: LocationStrategy, useClass: HashLocationStrategy}
     ],
     bootstrap: [AppComponent]
 })
