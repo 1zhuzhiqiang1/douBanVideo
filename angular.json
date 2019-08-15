@@ -25,10 +25,12 @@
             "aot": false,
             "assets": [
               "src/favicon.ico",
-              "src/assets"
+              "src/assets",
+                "src/mock-data"
             ],
             "styles": [
               "src/styles.scss",
+              "src/assets/css/init.css",
               "node_modules/bootstrap/dist/css/bootstrap.min.css"
             ],
             "scripts": [

@@ -1,0 +1,14 @@
+@media (max-width: 1024px) {
+    #wrapper {
+        width:1000px
+    }
+    body {
+        width:1024px
+    }
+    body .grid-16-8 .article {
+        padding-right:25px
+    }
+    [id^=dale_] {
+        max-width:1000px
+    }
+}
